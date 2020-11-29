@@ -1,7 +1,12 @@
 @import 'config.scss';
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
-    background-color: $dark;
+    background-color: $light;
     text-align: center;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -9,20 +14,37 @@ body{
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    overflow-y: hidden;
 }
 
 .App{
-    color: $light;
-
-    h1{
-        font-family: $header-font;
-    }
-    p{
-        font-size: 1.25em;
-        font-family: $body-font;
-    }
+    height: 100vh;
 }
 
-.image{
-    width: 1000px;
+a{
+    color: $light;
+    text-decoration: none;
+}
+
+@import 'header.scss';
+@import 'title.scss';
+@import 'content.scss';
+@import 'main.scss';
+
+// Custom Scrollbar from w3schools.com
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: $primary; 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: ligthen($primary, 10); 
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $primary;
 }

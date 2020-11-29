@@ -1,0 +1,34 @@
+{
+    "sections": [
+        {
+            "icon": "file-o",
+            "header": "Introduction",
+            "overview": "A high-level summary about the project."
+        },
+        {
+            "icon": "download",
+            "header": "Installation",
+            "overview": "An overview of the project documentation and how to get started."
+        },
+        {
+            "icon": "window-restore",
+            "header": "Architecture",
+            "overview": "A high-level overview of the software design and architecture."
+        },
+        {
+            "icon": "server",
+            "header": "APIs",
+            "overview": "A documentation of how to use and integrate with the APIs of this project."
+        },
+        {
+            "icon": "wifi",
+            "header": "Deployment",
+            "overview": "An overview of the deployment process and key variables."
+        },
+        {
+            "icon": "gears",
+            "header": "Resources",
+            "overview": "A list of third party resources and utilities used in the development of this project."
+        }
+    ]
+}
