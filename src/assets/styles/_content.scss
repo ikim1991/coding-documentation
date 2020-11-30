@@ -1,5 +1,7 @@
 .content{
+    position: absolute;
     width: 100%;
+    top: 35%;
     min-height: 65%;
     margin: auto;
     margin-top: 5%;
@@ -13,31 +15,30 @@
     .content-section{
         width: 100%;
         height: 100%;
-        padding: 10%;
         box-shadow: 1px 1px 1px 2px lighten($secondary, 42.5);
         cursor: pointer;
         color: darken($secondary, 22.5);
         font-family: $font;
+        padding: 10%;
+        box-sizing: border-box;
 
         .section-header{
             display: flex;
             align-items: center;
             justify-content: center;
             width: 100%;
-            padding: 10px;
+            margin-bottom: 25px;
 
             i{
                 font-size: 2rem;
-                margin: 0 10px;
                 color: $primary;
+                padding: 0 10px;
             }
             h2{
                 font-size: 1.5rem;
-                margin: 0 10px;
             }
         }
         p{
-            padding: 10px;
             width: 100%;
             text-align: left;
         }

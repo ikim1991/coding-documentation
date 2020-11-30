@@ -10,6 +10,7 @@
     border-bottom: 1px lighten($secondary, 45) solid;
     background-color: $light;
     z-index: 1;
+    top: 0;
 
     .icon{
         display: block;

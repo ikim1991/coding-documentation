@@ -1,6 +1,30 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useSelector } from 'react-redux';
+import { AppState } from '../../store/store';
 
 const Main = () => {
+
+    const { id } = useSelector((state: AppState) => state.changeView);
+
+    useEffect(() => {
+        document.querySelectorAll('.main-content section h2').forEach(el => {
+            if(el.textContent!.toLowerCase() === id){
+                el.classList.add('main-highlighted')
+                
+            } else{
+                el.classList.remove('main-highlighted')
+            }
+        })
+
+        document.querySelectorAll('.sidebar section h2').forEach(el => {
+            if(el.textContent!.toLowerCase() === id){
+                el.classList.add('side-highlighted')
+                document.querySelector(`#side-${id}`)!.scrollIntoView()
+            } else{
+                el.classList.remove('side-highlighted')
+            }
+        })
+    }, [id])
 
     const hoveringSection = (e: React.MouseEvent<HTMLElement>) => {
         document.querySelectorAll('.main-content section h2').forEach(el => {
