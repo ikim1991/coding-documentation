@@ -1,122 +1,81 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 const Main = () => {
 
-    const [sidebarScroll, setSidebarScroll] = useState(0);
+    const hoveringSection = (e: React.MouseEvent<HTMLElement>) => {
+        document.querySelectorAll('.main-content section h2').forEach(el => {
+            if(el.textContent!.toLowerCase() === e.currentTarget.id){
+                el.classList.add('main-highlighted')
+                
+            } else{
+                el.classList.remove('main-highlighted')
+            }
+        })
 
-    const highlightText = (hash: string) => {
-
-       document.querySelectorAll('.sidebar section h2').forEach(el => {
-           el.classList.remove('side-highlighted')
-       })
-
-       document.querySelectorAll('.main-content section h2').forEach(el => {
-           el.classList.remove('main-highlighted')
-       })
-
-       let selector = `#${hash.split('-')[1]}`
-
-        switch(hash){
-            case '#side-introduction':
-                (document.querySelector(hash)!.firstChild as HTMLElement).classList.add('side-highlighted');
-                (document.querySelector(selector)!.firstChild as HTMLElement).classList.add('main-highlighted');
-                break;
-            case '#side-installation':
-                (document.querySelector(hash)!.firstChild as HTMLElement).classList.add('side-highlighted');
-                (document.querySelector(selector)!.firstChild as HTMLElement).classList.add('main-highlighted');
-                break;
-            case '#side-architecture':
-                (document.querySelector(hash)!.firstChild as HTMLElement).classList.add('side-highlighted');
-                (document.querySelector(selector)!.firstChild as HTMLElement).classList.add('main-highlighted');
-                break;
-            case '#side-apis':
-                (document.querySelector(hash)!.firstChild as HTMLElement).classList.add('side-highlighted');
-                (document.querySelector(selector)!.firstChild as HTMLElement).classList.add('main-highlighted');
-                break;
-            case '#side-deployment':
-                (document.querySelector(hash)!.firstChild as HTMLElement).classList.add('side-highlighted');
-                (document.querySelector(selector)!.firstChild as HTMLElement).classList.add('main-highlighted');
-                break;
-            case '#side-resources':
-                (document.querySelector(hash)!.firstChild as HTMLElement).classList.add('side-highlighted');
-                (document.querySelector(selector)!.firstChild as HTMLElement).classList.add('main-highlighted');
-                break;
-            default:
-                break;
-        }
+        document.querySelectorAll('.sidebar section h2').forEach(el => {
+            if(el.textContent!.toLowerCase() === e.currentTarget.id){
+                el.classList.add('side-highlighted')
+                document.querySelector(`#side-${e.currentTarget.id}`)!.scrollIntoView()
+            } else{
+                el.classList.remove('side-highlighted')
+            }
+        })
     }
 
-    const onSidebarScroll = (e: React.MouseEvent<HTMLDivElement>) => {
-        console.log("sidebar")
-    }
+    const hoverSidebar = (e: React.MouseEvent<HTMLElement>) => {
+        document.querySelectorAll('.main-content section h2').forEach(el => {
+            if(e.currentTarget.id.includes(el.textContent!.toLowerCase())){
+                el.classList.add('main-highlighted')
+                
+            } else{
+                el.classList.remove('main-highlighted')
+            }
+        })
 
-    const onMainScroll = (e: React.MouseEvent<HTMLDivElement>) => {
- 
-        if(e.currentTarget.scrollTop < document.getElementById("introduction")!.offsetHeight){
-            document.location.hash = "#side-introduction"
-            highlightText(document.location.hash)
-        } else if(
-            e.currentTarget.scrollTop < document.getElementById("introduction")!.offsetHeight + document.getElementById("installation")!.offsetHeight
-        ){
-            document.location.hash = "#side-installation"
-            highlightText(document.location.hash)
-        } else if(
-            e.currentTarget.scrollTop < document.getElementById("introduction")!.offsetHeight + document.getElementById("installation")!.offsetHeight + document.getElementById("architecture")!.offsetHeight
-        ){
-            document.location.hash = "#side-architecture"
-            highlightText(document.location.hash)
-        } else if(
-            e.currentTarget.scrollTop < document.getElementById("introduction")!.offsetHeight + document.getElementById("installation")!.offsetHeight + document.getElementById("architecture")!.offsetHeight + document.getElementById("apis")!.offsetHeight
-        ){
-            document.location.hash = "#side-apis"
-            highlightText(document.location.hash)
-        } else if(
-            e.currentTarget.scrollTop < document.getElementById("introduction")!.offsetHeight + document.getElementById("installation")!.offsetHeight + document.getElementById("architecture")!.offsetHeight + document.getElementById("apis")!.offsetHeight + document.getElementById("deployment")!.offsetHeight
-        ){
-            document.location.hash = "#side-deployment"
-            highlightText(document.location.hash)
-        } else if(
-            e.currentTarget.scrollTop < document.getElementById("introduction")!.offsetHeight + document.getElementById("installation")!.offsetHeight + document.getElementById("architecture")!.offsetHeight + document.getElementById("apis")!.offsetHeight + document.getElementById("deployment")!.offsetHeight + document.getElementById("resources")!.offsetHeight
-        ){
-            document.location.hash = "#side-resources"
-            highlightText(document.location.hash)
-        }
+        document.querySelectorAll('.sidebar section h2').forEach(el => {
+            if(e.currentTarget.id.includes(el.textContent!.toLowerCase())){
+                el.classList.add('side-highlighted')
+                document.querySelector(`#${el.textContent!.toLowerCase()}`)!.scrollIntoView()
+            } else{
+                el.classList.remove('side-highlighted')
+            }
+        })
     }
 
     return(
         <div className="main">
-            <div className="sidebar" onScroll={onSidebarScroll}>
-                <section id="side-introduction">
+            <div className="sidebar">
+                <section id="side-introduction" onMouseEnter={hoverSidebar}>
                     <h2>Introduction</h2>
                     <p>Section Item 1.1</p>
                     <p>Section Item 1.2</p>
                     <p>Section Item 1.3</p>
                 </section>
-                <section id="side-installation">
+                <section id="side-installation" onMouseEnter={hoverSidebar}>
                     <h2>Installation</h2>
                     <p>Section Item 2.1</p>
                     <p>Section Item 2.2</p>
                     <p>Section Item 2.3</p>
                 </section>
-                <section id="side-architecture">
+                <section id="side-architecture" onMouseEnter={hoverSidebar}>
                     <h2>Architecture</h2>
                     <p>Section Item 3.1</p>
                     <p>Section Item 3.2</p>
                     <p>Section Item 3.3</p>
                 </section>
-                <section id="side-apis">
+                <section id="side-apis" onMouseEnter={hoverSidebar}>
                     <h2>APIs</h2>
                     <p>Section Item 4.1</p>
                     <p>Section Item 4.2</p>
                     <p>Section Item 4.3</p>
                 </section>
-                <section id="side-deployment">
+                <section id="side-deployment" onMouseEnter={hoverSidebar}>
                     <h2>Deployment</h2>
                     <p>Section Item 5.1</p>
                     <p>Section Item 5.2</p>
                     <p>Section Item 5.3</p>
                 </section>
-                <section id="side-resources">
+                <section id="side-resources" onMouseEnter={hoverSidebar}>
                     <h2>Resources</h2>
                     <p>Section Item 5.1</p>
                     <p>Section Item 5.2</p>
@@ -124,71 +83,31 @@ const Main = () => {
                 </section>
                 <div className="break"></div>
             </div>
-            <div className="main-content" onScroll={onMainScroll}>
+            <div className="main-content">
                 <header className="project-title">
                     <h1>Online Chess Documenation</h1>
                 </header>
-                <section id="introduction">
+                <section id="introduction" onMouseEnter={hoveringSection}>
                     <h2>Introduction</h2>
                     <p>INSERT INFO</p>
-                    <h2>Introduction</h2>
-                    <p>Section Item 1.1</p>
-                    <p>Section Item 1.2</p>
-                    <p>Section Item 1.3</p>
-                    <h2>Introduction</h2>
-                    <p>Section Item 1.1</p>
-                    <p>Section Item 1.2</p>
-                    <p>Section Item 1.3</p>
                 </section>
-                <section id="installation">
+                <section id="installation" onMouseEnter={hoveringSection}>
                     <h2>Installation</h2>
                     <p>INSERT INFO</p>
-                    <h2>Introduction</h2>
-                    <p>Section Item 1.1</p>
-                    <p>Section Item 1.2</p>
-                    <p>Section Item 1.3</p>
-                    <h2>Introduction</h2>
-                    <p>Section Item 1.1</p>
-                    <p>Section Item 1.2</p>
-                    <p>Section Item 1.3</p>
                 </section>
-                <section id="architecture">
+                <section id="architecture" onMouseEnter={hoveringSection}>
                     <h2>Architecture</h2>
                     <p>INSERT INFO</p>
-                    <h2>Introduction</h2>
-                    <p>Section Item 1.1</p>
-                    <p>Section Item 1.2</p>
-                    <p>Section Item 1.3</p>
-                    <h2>Introduction</h2>
-                    <p>Section Item 1.1</p>
-                    <p>Section Item 1.2</p>
-                    <p>Section Item 1.3</p>
                 </section>
-                <section id="apis">
+                <section id="apis" onMouseEnter={hoveringSection}>
                     <h2>APIs</h2>
                     <p>INSERT INFO</p>
-                    <h2>Introduction</h2>
-                    <p>Section Item 1.1</p>
-                    <p>Section Item 1.2</p>
-                    <p>Section Item 1.3</p>
-                    <h2>Introduction</h2>
-                    <p>Section Item 1.1</p>
-                    <p>Section Item 1.2</p>
-                    <p>Section Item 1.3</p>
                 </section>
-                <section id="deployment">
+                <section id="deployment" onMouseEnter={hoveringSection}>
                     <h2>Deployment</h2>
                     <p>INSERT INFO</p>
-                    <h2>Introduction</h2>
-                    <p>Section Item 1.1</p>
-                    <p>Section Item 1.2</p>
-                    <p>Section Item 1.3</p>
-                    <h2>Introduction</h2>
-                    <p>Section Item 1.1</p>
-                    <p>Section Item 1.2</p>
-                    <p>Section Item 1.3</p>
                 </section>
-                <section id="resources">
+                <section id="resources" onMouseEnter={hoveringSection}>
                     <h2>Resources</h2>
                     <p>INSERT INFO</p>
 
