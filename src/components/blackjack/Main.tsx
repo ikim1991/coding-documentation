@@ -109,7 +109,7 @@ const Main = () => {
             </div>
             <div className="main-content">
                 <header className="project-title">
-                    <h1>Online Chess Documenation</h1>
+                    <h1>Interactive BlackJack Documenation</h1>
                 </header>
                 <section id="introduction" onMouseEnter={hoveringSection}>
                     <Introduction/>

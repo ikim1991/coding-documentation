@@ -21,8 +21,8 @@
             "overview": "A documentation of how to use and integrate with the APIs of this project."
         },
         {
-            "icon": "wifi",
-            "header": "Deployment",
+            "icon": "wrench",
+            "header": "Bugs",
             "overview": "An overview of the deployment process and key variables."
         },
         {

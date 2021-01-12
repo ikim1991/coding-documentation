@@ -4,7 +4,6 @@ import Icon from '../assets/images/favicon.png';
 
 const Header = () => {
 
-
     return(
         <div className="header">
             <img className="icon" src={Icon} alt="ck"/>

@@ -11,6 +11,7 @@
     background-color: $light;
     z-index: 1;
     top: 0;
+    overflow: hidden;
 
     .icon{
         display: block;
