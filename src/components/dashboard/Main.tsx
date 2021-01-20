@@ -25,6 +25,9 @@ const Main = () => {
                 el.classList.remove('side-highlighted')
             }
         })
+
+        document.querySelector(`#${id!.toLowerCase()}`)!.scrollIntoView()
+        
     }, [id])
 
     const hoveringSection = (e: React.MouseEvent<HTMLElement>) => {

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { AppState } from '../../store/store';
+import Installation from './content/Installation';
 import Introduction from './content/Introduction';
 
 const Main = () => {
@@ -25,6 +26,8 @@ const Main = () => {
                 el.classList.remove('side-highlighted')
             }
         })
+
+        document.querySelector(`#${id!.toLowerCase()}`)!.scrollIntoView()
     }, [id])
 
     const hoveringSection = (e: React.MouseEvent<HTMLElement>) => {
@@ -76,9 +79,9 @@ const Main = () => {
                 </section>
                 <section id="side-installation" onMouseEnter={hoverSidebar}>
                     <h2>Installation</h2>
-                    <p>Section Item 2.1</p>
-                    <p>Section Item 2.2</p>
-                    <p>Section Item 2.3</p>
+                    <p>Getting Started</p>
+                    <p>Server Side</p>
+                    <p>Client Side</p>
                 </section>
                 <section id="side-architecture" onMouseEnter={hoverSidebar}>
                     <h2>Architecture</h2>
@@ -116,7 +119,7 @@ const Main = () => {
                 </section>
                 <section id="installation" onMouseEnter={hoveringSection}>
                     <h2>Installation</h2>
-                    <p>INSERT INFO</p>
+                    <Installation/>
                 </section>
                 <section id="architecture" onMouseEnter={hoveringSection}>
                     <h2>Architecture</h2>
