@@ -18,8 +18,6 @@
             text-align: center;
             padding-top: 25px;
             
-            
-
             .side-highlighted{
                 border-left: 5px lighten($secondary, 30) solid;
                 color: $primary;
@@ -58,10 +56,53 @@
         }
 
         section{
-            padding: 15px 100px;
+            padding: 0 100px;
+
+            h2{
+                padding: 0;
+            }
 
             .main-highlighted{
                 color: $primary;
+            }
+
+            .section-item{
+                
+                margin-left: 25px;
+
+                h3{
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    font-size: 1.25em;
+                }
+
+                p{
+                    margin: 15px 0;
+                }
+
+                a{
+                    color: $dark;
+                    text-decoration: underline;
+                }
+
+                .repo{
+                    line-height: 1.5em;
+                
+                    p{
+                        margin: 0;
+                    }
+                }
+
+                .inline-link{
+                    margin: 0;
+                    padding: 0;
+                    white-space: nowrap;
+                    line-height: normal;
+                }
+            }
+
+            .section-item:last-child{
+                margin-bottom: 20px;
             }
         }
 

@@ -73,7 +73,6 @@ const Main = () => {
                 <section id="side-introduction" onMouseEnter={hoverSidebar}>
                     <h2>Introduction</h2>
                     <p>Project Summary</p>
-                    <p>Getting Started</p>
                 </section>
                 <section id="side-installation" onMouseEnter={hoverSidebar}>
                     <h2>Installation</h2>
@@ -112,6 +111,7 @@ const Main = () => {
                     <h1>Online Chess Documenation</h1>
                 </header>
                 <section id="introduction" onMouseEnter={hoveringSection}>
+                    <h2>Introduction</h2>
                     <Introduction/>
                 </section>
                 <section id="installation" onMouseEnter={hoveringSection}>
