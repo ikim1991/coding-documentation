@@ -6,7 +6,7 @@ const Introduction = () => {
             <div className="section-item">
                 <h3>Project Summary</h3>
                 <p>After binge watching The Queen's Gambit on Netflix, I decided to build a fully working game of chess on the web.</p>
-                <p>The app is deployed through Heroku and can be found in the link below: </p>
+                <p>The application is deployed through GitHub Pages and Heroku. The application can be found in the link below: </p>
                 <p><a href="https://google.ca">Deployment</a></p>
                 <p>The source code is on GitHub which can be found in the links below: </p>
                 <div className="repo">

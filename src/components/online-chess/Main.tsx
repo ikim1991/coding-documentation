@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { AppState } from '../../store/store';
+import Architecture from './content/Architecture';
 import Installation from './content/Installation';
 import Introduction from './content/Introduction';
 
@@ -21,13 +22,13 @@ const Main = () => {
         document.querySelectorAll('.sidebar section h2').forEach(el => {
             if(el.textContent!.toLowerCase() === id){
                 el.classList.add('side-highlighted')
-                document.querySelector(`#side-${id}`)!.scrollIntoView()
+                document.querySelector(`#side-${id}`)!.scrollIntoView({behavior: 'smooth', block: 'start'})
             } else{
                 el.classList.remove('side-highlighted')
             }
         })
 
-        document.querySelector(`#${id!.toLowerCase()}`)!.scrollIntoView()
+        document.querySelector(`#${id!.toLowerCase()}`)!.scrollIntoView({behavior: 'smooth', block: 'start'})
     }, [id])
 
     const hoveringSection = (e: React.MouseEvent<HTMLElement>) => {
@@ -43,7 +44,7 @@ const Main = () => {
         document.querySelectorAll('.sidebar section h2').forEach(el => {
             if(el.textContent!.toLowerCase() === e.currentTarget.id){
                 el.classList.add('side-highlighted')
-                document.querySelector(`#side-${e.currentTarget.id}`)!.scrollIntoView()
+                document.querySelector(`#side-${e.currentTarget.id}`)!.scrollIntoView({behavior: 'smooth', block: 'start'})
             } else{
                 el.classList.remove('side-highlighted')
             }
@@ -63,7 +64,7 @@ const Main = () => {
         document.querySelectorAll('.sidebar section h2').forEach(el => {
             if(e.currentTarget.id.includes(el.textContent!.toLowerCase())){
                 el.classList.add('side-highlighted')
-                document.querySelector(`#${el.textContent!.toLowerCase()}`)!.scrollIntoView()
+                document.querySelector(`#${el.textContent!.toLowerCase()}`)!.scrollIntoView({behavior: 'smooth', block: 'start'})
             } else{
                 el.classList.remove('side-highlighted')
             }
@@ -85,15 +86,14 @@ const Main = () => {
                 </section>
                 <section id="side-architecture" onMouseEnter={hoverSidebar}>
                     <h2>Architecture</h2>
-                    <p>Section Item 3.1</p>
-                    <p>Section Item 3.2</p>
-                    <p>Section Item 3.3</p>
+                    <p>Application Architecture</p>
+                    <p>Application Pipeline</p>
                 </section>
                 <section id="side-apis" onMouseEnter={hoverSidebar}>
                     <h2>APIs</h2>
-                    <p>Section Item 4.1</p>
-                    <p>Section Item 4.2</p>
-                    <p>Section Item 4.3</p>
+                    <p>RESTful API</p>
+                    <p>WebSockets</p>
+                    <p>Database Service</p>
                 </section>
                 <section id="side-bugs" onMouseEnter={hoverSidebar}>
                     <h2>Bugs</h2>
@@ -123,7 +123,7 @@ const Main = () => {
                 </section>
                 <section id="architecture" onMouseEnter={hoveringSection}>
                     <h2>Architecture</h2>
-                    <p>INSERT INFO</p>
+                    <Architecture/>
                 </section>
                 <section id="apis" onMouseEnter={hoveringSection}>
                     <h2>APIs</h2>

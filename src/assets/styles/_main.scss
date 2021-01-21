@@ -99,6 +99,12 @@
                     white-space: nowrap;
                     line-height: normal;
                 }
+
+                .item-image{
+                    width: 100%;
+                    margin: 1%;
+                    border: 1px solid lighten($secondary, 45);
+                }
             }
 
             .section-item:last-child{

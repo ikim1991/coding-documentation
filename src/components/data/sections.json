@@ -23,7 +23,7 @@
         {
             "icon": "wrench",
             "header": "Bugs",
-            "overview": "An overview of the deployment process and key variables."
+            "overview": "An overview of any unfixed bugs currently found in the application."
         },
         {
             "icon": "gears",

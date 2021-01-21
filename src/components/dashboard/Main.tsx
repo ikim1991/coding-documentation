@@ -20,13 +20,13 @@ const Main = () => {
         document.querySelectorAll('.sidebar section h2').forEach(el => {
             if(el.textContent!.toLowerCase() === id){
                 el.classList.add('side-highlighted')
-                document.querySelector(`#side-${id}`)!.scrollIntoView()
+                document.querySelector(`#side-${id}`)!.scrollIntoView({behavior: 'smooth', block: 'start'})
             } else{
                 el.classList.remove('side-highlighted')
             }
         })
 
-        document.querySelector(`#${id!.toLowerCase()}`)!.scrollIntoView()
+        document.querySelector(`#${id!.toLowerCase()}`)!.scrollIntoView({behavior: 'smooth', block: 'start'})
         
     }, [id])
 
@@ -43,7 +43,7 @@ const Main = () => {
         document.querySelectorAll('.sidebar section h2').forEach(el => {
             if(el.textContent!.toLowerCase() === e.currentTarget.id){
                 el.classList.add('side-highlighted')
-                document.querySelector(`#side-${e.currentTarget.id}`)!.scrollIntoView()
+                document.querySelector(`#side-${e.currentTarget.id}`)!.scrollIntoView({behavior: 'smooth', block: 'start'})
             } else{
                 el.classList.remove('side-highlighted')
             }
@@ -63,7 +63,7 @@ const Main = () => {
         document.querySelectorAll('.sidebar section h2').forEach(el => {
             if(e.currentTarget.id.includes(el.textContent!.toLowerCase())){
                 el.classList.add('side-highlighted')
-                document.querySelector(`#${el.textContent!.toLowerCase()}`)!.scrollIntoView()
+                document.querySelector(`#${el.textContent!.toLowerCase()}`)!.scrollIntoView({behavior: 'smooth', block: 'start'})
             } else{
                 el.classList.remove('side-highlighted')
             }
