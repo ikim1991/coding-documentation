@@ -26,7 +26,7 @@ const Main = () => {
             }
         })
 
-        document.querySelector(`#${id!.toLowerCase()}`)!.scrollIntoView({behavior: 'smooth', block: 'start'})
+        document.querySelector(`#${id!.toLowerCase()}`)!.scrollIntoView()
 
     }, [id])
 

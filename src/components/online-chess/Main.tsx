@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { AppState } from '../../store/store';
+import APIs from './content/APIs';
 import Architecture from './content/Architecture';
 import Installation from './content/Installation';
 import Introduction from './content/Introduction';
@@ -28,7 +29,7 @@ const Main = () => {
             }
         })
 
-        document.querySelector(`#${id!.toLowerCase()}`)!.scrollIntoView({behavior: 'smooth', block: 'start'})
+        document.querySelector(`#${id!.toLowerCase()}`)!.scrollIntoView({behavior: 'smooth'})
     }, [id])
 
     const hoveringSection = (e: React.MouseEvent<HTMLElement>) => {
@@ -91,7 +92,7 @@ const Main = () => {
                 </section>
                 <section id="side-apis" onMouseEnter={hoverSidebar}>
                     <h2>APIs</h2>
-                    <p>RESTful API</p>
+                    <p>REST APIs</p>
                     <p>WebSockets</p>
                     <p>Database Service</p>
                 </section>
@@ -127,7 +128,7 @@ const Main = () => {
                 </section>
                 <section id="apis" onMouseEnter={hoveringSection}>
                     <h2>APIs</h2>
-                    <p>INSERT INFO</p>
+                    <APIs/>
                 </section>
                 <section id="bugs" onMouseEnter={hoveringSection}>
                     <h2>Bugs</h2>

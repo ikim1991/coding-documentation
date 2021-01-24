@@ -8,8 +8,8 @@ const Content = () => {
     const dispatch = useDispatch();
 
     const navigateView = (e:React.MouseEvent<HTMLElement>) => {
-        dispatch(changeView(true));
         dispatch(highlightSection(e.currentTarget.id));
+        dispatch(changeView(true));
     }
 
     return(

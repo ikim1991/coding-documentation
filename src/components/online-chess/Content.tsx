@@ -16,7 +16,7 @@ const Content = () => {
         <div className="content">
             {data.sections.map((section, i) => {
                 return(
-                    <div id={section.header.toLowerCase()}className="content-section" onClick={navigateView} key={i}>
+                    <div id={section.header.toLowerCase()} className="content-section" onClick={navigateView} key={i}>
                         <div className="section-header">
                             <i className={`fa fa-${section.icon}`}></i>
                             <h2>{section.header}</h2>
