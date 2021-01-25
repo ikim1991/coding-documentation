@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { highlightSection } from '../../store/actions/ChangeViewActions';
 import { AppState } from '../../store/store';
 import APIs from './content/APIs';
 import Architecture from './content/Architecture';
@@ -29,7 +30,23 @@ const Main = () => {
             }
         })
 
-        document.querySelector(`#${id!.toLowerCase()}`)!.scrollIntoView({behavior: 'smooth'})
+        const sectionArray = Array.from(document.querySelectorAll('.main-content section'))
+        let scroll = 0
+
+        setTimeout(() => {
+            for (let element of sectionArray){
+                if(element.id === id){
+                    break
+                } else{
+                    scroll += element.scrollHeight
+                }
+            }
+
+            document.querySelector('.main-content')!.scrollBy({
+                top: scroll,
+                behavior: 'smooth'
+            })
+        }, 250)
     }, [id])
 
     const hoveringSection = (e: React.MouseEvent<HTMLElement>) => {

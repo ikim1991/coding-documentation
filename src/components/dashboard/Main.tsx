@@ -26,8 +26,23 @@ const Main = () => {
             }
         })
 
-        document.querySelector(`#${id!.toLowerCase()}`)!.scrollIntoView()
-        
+        const sectionArray = Array.from(document.querySelectorAll('.main-content section'))
+        let scroll = 0
+
+        setTimeout(() => {
+            for (let element of sectionArray){
+                if(element.id === id){
+                    break
+                } else{
+                    scroll += element.scrollHeight
+                }
+            }
+
+            document.querySelector('.main-content')!.scrollBy({
+                top: scroll,
+                behavior: 'smooth'
+            })
+        }, 250)
     }, [id])
 
     const hoveringSection = (e: React.MouseEvent<HTMLElement>) => {
