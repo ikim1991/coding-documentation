@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { highlightSection } from '../../store/actions/ChangeViewActions';
 import { AppState } from '../../store/store';
 import APIs from './content/APIs';
 import Architecture from './content/Architecture';
 import Installation from './content/Installation';
 import Introduction from './content/Introduction';
+import Bugs from './content/Bugs';
+import { useSelector } from 'react-redux';
 
 const Main = () => {
 
@@ -46,7 +46,7 @@ const Main = () => {
                 top: scroll,
                 behavior: 'smooth'
             })
-        }, 250)
+        }, 500)
     }, [id])
 
     const hoveringSection = (e: React.MouseEvent<HTMLElement>) => {
@@ -115,9 +115,9 @@ const Main = () => {
                 </section>
                 <section id="side-bugs" onMouseEnter={hoverSidebar}>
                     <h2>Bugs</h2>
-                    <p>Section Item 5.1</p>
-                    <p>Section Item 5.2</p>
-                    <p>Section Item 5.3</p>
+                    <p>Testing</p>
+                    <p>Errors & Bugs</p>
+                    <p>Features</p>
                 </section>
                 <section id="side-resources" onMouseEnter={hoverSidebar}>
                     <h2>Resources</h2>
@@ -149,7 +149,7 @@ const Main = () => {
                 </section>
                 <section id="bugs" onMouseEnter={hoveringSection}>
                     <h2>Bugs</h2>
-                    <p>INSERT INFO</p>
+                    <Bugs/>
                 </section>
                 <section id="resources" onMouseEnter={hoveringSection}>
                     <h2>Resources</h2>
