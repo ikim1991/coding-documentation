@@ -6,6 +6,7 @@ import Installation from './content/Installation';
 import Introduction from './content/Introduction';
 import Bugs from './content/Bugs';
 import { useSelector } from 'react-redux';
+import Resources from './content/Resources';
 
 const Main = () => {
 
@@ -121,9 +122,7 @@ const Main = () => {
                 </section>
                 <section id="side-resources" onMouseEnter={hoverSidebar}>
                     <h2>Resources</h2>
-                    <p>Section Item 5.1</p>
-                    <p>Section Item 5.2</p>
-                    <p>Section Item 5.3</p>
+                    <p>Additional Libraries</p>
                 </section>
                 <div className="break"></div>
             </div>
@@ -153,7 +152,7 @@ const Main = () => {
                 </section>
                 <section id="resources" onMouseEnter={hoveringSection}>
                     <h2>Resources</h2>
-                    <p>INSERT INFO</p>
+                    <Resources/>
                 </section>
                 <footer>
                     <div>
