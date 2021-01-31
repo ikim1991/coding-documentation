@@ -4,7 +4,7 @@ const Resources = () => {
     return(
         <div className="resources">
             <div className="section-item">
-                <h3>Client Side Libraries</h3>
+                <h3>Main Client Side Libraries</h3>
                 <div className="indent">
                     <p><strong>React - ^17.0.1</strong></p>
                     <p>The front-end application is built on React using UI components. This allows for the development of clean, fast, and scaleable coding.</p>
@@ -19,7 +19,7 @@ const Resources = () => {
                 </div>
             </div>
             <div className="section-item">
-                <h3>Server Side Libraries</h3>
+                <h3>Main Server Side Libraries</h3>
                 <div className="indent">
                     <p><strong>Express - ^4.17.1</strong></p>
                     <p>A minimal and flexible web application framework for the back-end development of the application.</p>

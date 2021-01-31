@@ -18,8 +18,10 @@ const Bugs = () => {
             <div className="section-item">
                 <h3>Features</h3>
                 <p>There are a few features missing from the application. The production version has been deployed and these missing features will be added in an update in the future.</p>
-                <p>Currently, there is no way for the players to communicate with one another. Whether it is in the lobby or during the game, the players are not able to interact. An interactive real-time chat messenger will be added in an update in the future.</p>
-                <p>Secondly, there is no logic available for verifying and validating the states of CHECK or CHECKMATE. The winning player must capture the opponent's King manually for the game to end. A logic that automates and notifies the states of being CHECKED or CHECKMATED will be added in an update in the future.</p>
+                <p>There is no way for the players to communicate with one another. Whether it is in the lobby or during the game, the players are not able to interact. An interactive real-time chat messenger will be added in an update in the future.</p>
+                <p>There is no logic available for verifying and validating the states of CHECK or CHECKMATE. The winning player must capture the opponent's King manually for the game to end. A logic that automates and notifies the states of being CHECKED or CHECKMATED will be added in an update in the future.</p>
+                <p>The application is currently not supported on mobile and tablets. Although it implements responsive design, it is recommended to not use this application below the minimum screen resolution width of 1024px.</p>
+                <p>A 16:9 aspect ratio for screen resolution is recommended.</p>
             </div>
         </div>
     )

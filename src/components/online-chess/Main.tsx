@@ -164,7 +164,6 @@ const Main = () => {
                             <a href="https://instagram.com/ikim91/" target="_blank"><i className="fa fa-instagram"></i></a>
                         </div>
                     </div>
-                    
                 </footer>
             </div>
         </div>
