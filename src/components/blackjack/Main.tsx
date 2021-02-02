@@ -1,7 +1,12 @@
 import React, { useEffect } from 'react';
-import { useSelector } from 'react-redux';
 import { AppState } from '../../store/store';
+import APIs from './content/APIs';
+import Architecture from './content/Architecture';
+import Installation from './content/Installation';
 import Introduction from './content/Introduction';
+import Bugs from './content/Bugs';
+import { useSelector } from 'react-redux';
+import Resources from './content/Resources';
 
 const Main = () => {
 
@@ -42,7 +47,7 @@ const Main = () => {
                 top: scroll,
                 behavior: 'smooth'
             })
-        }, 250)
+        }, 500)
     }, [id])
 
     const hoveringSection = (e: React.MouseEvent<HTMLElement>) => {
@@ -130,27 +135,28 @@ const Main = () => {
                     <h1>Interactive BlackJack Documenation</h1>
                 </header>
                 <section id="introduction" onMouseEnter={hoveringSection}>
+                    <h2>Introduction</h2>
                     <Introduction/>
                 </section>
                 <section id="installation" onMouseEnter={hoveringSection}>
                     <h2>Installation</h2>
-                    <p>INSERT INFO</p>
+                    <Installation/>
                 </section>
                 <section id="architecture" onMouseEnter={hoveringSection}>
                     <h2>Architecture</h2>
-                    <p>INSERT INFO</p>
+                    <Architecture/>
                 </section>
                 <section id="apis" onMouseEnter={hoveringSection}>
                     <h2>APIs</h2>
-                    <p>INSERT INFO</p>
+                    <APIs/>
                 </section>
                 <section id="bugs" onMouseEnter={hoveringSection}>
                     <h2>Bugs</h2>
-                    <p>INSERT INFO</p>
+                    <Bugs/>
                 </section>
                 <section id="resources" onMouseEnter={hoveringSection}>
                     <h2>Resources</h2>
-                    <p>INSERT INFO</p>
+                    <Resources/>
                 </section>
                 <footer>
                     <div>
@@ -162,7 +168,6 @@ const Main = () => {
                             <a href="https://instagram.com/ikim91/" target="_blank"><i className="fa fa-instagram"></i></a>
                         </div>
                     </div>
-                    
                 </footer>
             </div>
         </div>
