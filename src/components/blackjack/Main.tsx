@@ -96,11 +96,10 @@ const Main = () => {
                 <section id="side-introduction" onMouseEnter={hoverSidebar}>
                     <h2>Introduction</h2>
                     <p>Project Summary</p>
-                    <p>Getting Started</p>
                 </section>
                 <section id="side-installation" onMouseEnter={hoverSidebar}>
                     <h2>Installation</h2>
-                    <p>Section Item 2.1</p>
+                    <p>Getting Started</p>
                     <p>Section Item 2.2</p>
                     <p>Section Item 2.3</p>
                 </section>
