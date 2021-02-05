@@ -15,11 +15,20 @@ const Installation = () => {
             </div>
             <div className="section-item">
                 <h3>Server Side</h3>
-                <p>TEXT</p>
+                <p>To start, begin by installing the server side application first. You can clone or download it from the repositroy in the link above.</p>
+                <p>Start by running the command <i>npm install</i> to install all required dependencies.</p>
+                <p>After all the dependencies have been installed onto the local machine, the server can be started.</p>
+                <p>Run the command <i>npm run dev</i>.</p>
+                <p>This will create a local development server environment using nodemon. By default, the PORT variable has been set to 3001.</p>
              </div>
             <div className="section-item">
                 <h3>Client Side</h3>
-                <p>TEXT</p>
+                <p>After the server side application is successfully running on the local machine, download or clone the client side from the repository in the link above.</p>
+                <p>Start by running the command <i>npm install</i> to install all required dependencies.</p>
+                <p>The client side is built using the create-react-app command. The development server is currently running on Port 3001 at http://localhost:3001/. This URL needs to be referenced in 2 files on the client-side application. It is found in the fetch methods in the <span><a className="inline-link" href="https://github.com/ikim1991/interactive-blackjack-app/blob/master/src/actions.js/" target="_blank" rel="noreferrer">actions.js file</a></span> and <span><a className="inline-link" href="https://github.com/ikim1991/interactive-blackjack-app/blob/master/src/components/SignUpForm.js/" target="_blank" rel="noreferrer">SignUpForm.js file</a></span>.</p>
+                <p>Next run the command <i>npm start</i>.</p>
+                <p>This will build and create the client side application locally using React Scripts.</p>
+                <p>The game should now be running locally on http://localhost:3000/.</p>
             </div>
         </div>
     )
