@@ -7,25 +7,13 @@ const APIs = () => {
                 <h3>REST APIs</h3>
                 <p>This application uses Express.js on the back-end for its REST API endpoints.</p>
                 <div className="indent">
-                    <p><strong>Method: , Endpoint: </strong></p>
-                    <p>REST API</p>
+                    <p><strong>Method: POST, Endpoint: /signin</strong></p>
+                    <p>Takes the username, passoword, and server input values from the user and is sent to the server as the request body. The username and password is validated against the data existing on the back-end. If authenticated, the user data is sent back to the client. Password is stored as a string value on the back-end. Although this is not good practice, it was done as a quick solution on a personal project. It is recommended that an encryption library such as bcrypt is used if a password must be stored.</p>
                 </div>
                 <div className="indent">
-                    <p><strong>Method: , Endpoint: </strong></p>
-                    <p>REST API</p>
+                    <p><strong>Method: POST, Endpoint: /signup</strong></p>
+                    <p>Takes the username and password input values from the user and is sent to the server as the request body in JSON. The server verifies that the username is not already in use and creates a new user on the back-end.</p>
                 </div>        
-                <div className="indent">
-                    <p><strong>Method: , Endpoint: </strong></p>
-                    <p>REST API</p>
-                </div>
-            </div>
-            <div className="section-item">
-                <h3>Websockets</h3>
-                <p>Websockets are used for real-time and interactivity of the game play. The Socket.io library is used in this application. The event emitters listed below flows in order of what happens during a game.</p>
-                <div className="indent">
-                    <p><strong>Event: , Emitter: </strong></p>
-                    <p>Socket Event</p>
-                </div>
             </div>
         </div>
     )
