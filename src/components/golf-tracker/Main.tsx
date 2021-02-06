@@ -5,14 +5,18 @@ import Architecture from './content/Architecture';
 import Installation from './content/Installation';
 import Introduction from './content/Introduction';
 import Bugs from './content/Bugs';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import Resources from './content/Resources';
+import { changeIndex } from '../../store/actions/ChangeViewActions';
 
 const Main = () => {
 
     const { id } = useSelector((state: AppState) => state.changeView);
+    const dispatch = useDispatch()
 
     useEffect(() => {
+
+        dispatch(changeIndex(0));
         document.querySelectorAll('.main-content section h2').forEach(el => {
             if(el.textContent!.toLowerCase() === id){
                 el.classList.add('main-highlighted')

@@ -17,6 +17,10 @@ const Introduction = () => {
                 <p>The server-side application is built on Nodejs using Express. It uses MongoDB as a database service. The server uses REST APIs and WebSockets (using Socket.io) to communicate with the clients. For all dependencies, refer to the <span><a className="inline-link" href="https://github.com/ikim1991/my-golf-tracker/blob/master/package.json/" target="_blank" rel="noreferrer">package.json</a></span> file.</p>
                 <p>The back-end application is hosted on Heroku using its free-tier plan. This may cause the first request to the server to take a few seconds to load as the app is put to sleep after 30 minutes of inactivity.</p>
             </div>
+            <div className="section-item">
+                <h3>Images</h3>
+                
+            </div>
         </div>
     )
 }

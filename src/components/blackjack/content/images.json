@@ -1,0 +1,48 @@
+{
+    "images": [
+        {
+            "title": "The main Login Page (Screenshoot from 1920x1080 Resolution)",
+            "url": "src/components/blackjack/content/images/login.png"
+        },
+        {
+            "title": "Choose from different servers to join (Screenshot from 1920x1080 resolution)",
+            "url": "src/components/blackjack/content/images/servers.png"
+        },
+        {
+            "title": "Register Page (Screenshot from 1920x1080 resolution)",
+            "url": "src/components/blackjack/content/images/register.png"
+        },
+        {
+            "title": "Game Rules (Screenshot from 1920x1080 resolution)",
+            "url": "src/components/blackjack/content/images/game-rules.png"
+        },
+        {
+            "title": "Lobby (Screenshot from 1920x1080 resolution)",
+            "url": "src/components/blackjack/content/images/lobby.png"
+        },
+        {
+            "title": "Betting Phase (Screenshot from 1920x1080 resolution)",
+            "url": "src/components/blackjack/content/images/betting.png"
+        },
+        {
+            "title": "Checking for Lucky Lucky Winners (Screenshot from 1920x1080 resolution)",
+            "url": "src/components/blackjack/content/images/luckylucky.png"
+        },
+        {
+            "title": "Gameplay 1 (Screenshot from 1920x1080 resolution)",
+            "url": "src/components/blackjack/content/images/gameplay.png"
+        },
+        {
+            "title": "Gameplay 2 (Screenshot from 1920x1080 resolution)",
+            "url": "src/components/blackjack/content/images/gameplay2.png"
+        },
+        {
+            "title": "Dealer (Screenshot from 1920x1080 resolution)",
+            "url": "src/components/blackjack/content/images/dealer.png"
+        },
+        {
+            "title": "Dealer Push (Screenshot from 1920x1080 resolution)",
+            "url": "src/components/blackjack/content/images/dealer-push.png"
+        }
+    ]
+}

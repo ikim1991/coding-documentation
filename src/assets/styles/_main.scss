@@ -109,6 +109,14 @@
                 .indent{
                     padding: 0 25px;
                 }
+
+                .app-images{
+                    .image{
+                        width: 100%;
+                        cursor: pointer;
+                        border: 1px solid lighten($secondary, 45);
+                    }
+                }
             }
 
             .section-item:last-child{

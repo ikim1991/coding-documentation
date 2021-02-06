@@ -5,14 +5,19 @@ import Architecture from './content/Architecture';
 import Installation from './content/Installation';
 import Introduction from './content/Introduction';
 import Bugs from './content/Bugs';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import Resources from './content/Resources';
+import { changeIndex } from '../../store/actions/ChangeViewActions';
 
 const Main = () => {
 
     const { id } = useSelector((state: AppState) => state.changeView);
+    const dispatch = useDispatch()
 
     useEffect(() => {
+
+        dispatch(changeIndex(0));
+
         document.querySelectorAll('.main-content section h2').forEach(el => {
             if(el.textContent!.toLowerCase() === id){
                 el.classList.add('main-highlighted')
@@ -120,9 +125,9 @@ const Main = () => {
                 </section>
                 <section id="side-resources" onMouseEnter={hoverSidebar}>
                     <h2>Resources</h2>
-                    <p>Section Item 5.1</p>
-                    <p>Section Item 5.2</p>
-                    <p>Section Item 5.3</p>
+                    <p>Client Side</p>
+                    <p>Server Side</p>
+                    <p>License</p>
                 </section>
                 <div className="break"></div>
             </div>
