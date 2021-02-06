@@ -118,11 +118,12 @@ const Main = () => {
                     <h2>Bugs</h2>
                     <p>Testing</p>
                     <p>Errors & Bugs</p>
-                    <p>Features</p>
+                    <p>Missing Functionality</p>
                 </section>
                 <section id="side-resources" onMouseEnter={hoverSidebar}>
                     <h2>Resources</h2>
-                    <p>Additional Libraries</p>
+                    <p>Client Side</p>
+                    <p>Server Side</p>
                 </section>
                 <div className="break"></div>
             </div>

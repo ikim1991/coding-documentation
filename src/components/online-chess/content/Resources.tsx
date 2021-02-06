@@ -4,7 +4,9 @@ const Resources = () => {
     return(
         <div className="resources">
             <div className="section-item">
-                <h3>Main Client Side Libraries</h3>
+                <h3>Client Side</h3>
+                <p>For a full list of all the dependencies of this application, refer to the <span><a className="inline-link" href="https://github.com/ikim1991/online-chess/blob/main/package.json/" target="_blank" rel="noreferrer">package.json file.</a></span></p>
+                <p>Shown below is the list of the major libaries used in developing this application.</p>
                 <div className="indent">
                     <p><strong>React - ^17.0.1</strong></p>
                     <p>The front-end application is built on React using UI components. This allows for the development of clean, fast, and scaleable coding.</p>
@@ -19,7 +21,9 @@ const Resources = () => {
                 </div>
             </div>
             <div className="section-item">
-                <h3>Main Server Side Libraries</h3>
+                <h3>Server Side</h3>
+                <p>For a full list of all the dependencies of this application, refer to the <span><a className="inline-link" href="https://github.com/ikim1991/online-chess-api/blob/main/package.json/" target="_blank" rel="noreferrer">package.json file.</a></span></p>
+                <p>Shown below is the list of the major libaries used in developing this application.</p>
                 <div className="indent">
                     <p><strong>Express - ^4.17.1</strong></p>
                     <p>A minimal and flexible web application framework for the back-end development of the application.</p>
