@@ -1,0 +1,36 @@
+{
+    "images": [
+        {
+            "title": "The main Login Page (Screenshot from 1366x768 resolution)",
+            "url": "src/components/dashboard/content/images/login.png"
+        },
+        {
+            "title": "Register Page (Screenshot from 1366x768 resolution)",
+            "url": "src/components/dashboard/content/images/register.png"
+        },
+        {
+            "title": "Main page on first load after registering (Screenshot from 1366x768 resolution)",
+            "url": "src/components/dashboard/content/images/onregister.png"
+        },
+        {
+            "title": "Lobby (Screenshot from 1366x768 resolution)",
+            "url": "src/components/dashboard/content/images/addstocktickers.png"
+        },
+        {
+            "title": "Updating stock tickers and financial data (Screenshot from 1366x768 resolution)",
+            "url": "src/components/dashboard/content/images/financialdata.png"
+        },
+        {
+            "title": "Collection of job postings (Screenshot from 1366x768 resolution)",
+            "url": "src/components/dashboard/content/images/jobpostings.png"
+        },
+        {
+            "title": "Create a new task and add to the To-Do list (Screenshot from 1366x768 resolution)",
+            "url": "src/components/dashboard/content/images/newtask.png"
+        },
+        {
+            "title": "Example of what the dashboard could look like (Screenshot from 1366x768 resolution)",
+            "url": "src/components/dashboard/content/images/todolist.png"
+        }
+    ]
+}

@@ -44,7 +44,6 @@ const Introduction = () => {
                     <p>CLICK IMAGE TO SEE NEXT</p>
                     <img className="image" src={data.images[index].url} alt="app-image" onClick={nextImage}/>
                 </div>
-                
             </div>
         </div>
     )

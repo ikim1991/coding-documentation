@@ -1,6 +1,24 @@
 import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { changeIndex } from '../../../store/actions/ChangeViewActions';
+import { AppState } from '../../../store/store';
+import data from './images/images.json';
 
 const Introduction = () => {
+
+    const { index } = useSelector((state: AppState) => state.changeView);
+    const dispatch = useDispatch()
+
+    const nextImage = () => {
+        let length = data.images.length
+        let next = index + 1
+
+        if(next > length - 1){
+            dispatch(changeIndex(0))
+        } else{
+            dispatch(changeIndex(next))
+        }
+    }
     return(
         <div className="introduction">
             <div className="section-item">
@@ -19,7 +37,11 @@ const Introduction = () => {
             </div>
             <div className="section-item">
                 <h3>Images</h3>
-                
+                <div className="app-images">
+                    <p>{`[${index + 1}/${data.images.length}] ${data.images[index].title}`}</p>
+                    <p>CLICK IMAGE TO SEE NEXT</p>
+                    <img className="image" src={data.images[index].url} alt="app-image" onClick={nextImage}/>
+                </div>
             </div>
         </div>
     )
