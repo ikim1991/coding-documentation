@@ -1,0 +1,40 @@
+{
+    "images": [
+        {
+            "title": "The Main Home Page for Creating and Joining a Room (Screenshoot from 1920x1080 Resolution)",
+            "url": "src/components/online-chess/content/images/home.png"
+        },
+        {
+            "title": "Prompting User to Enter a Username to either Create or Join a Room (Screenshot from 1920x1080 resolution)",
+            "url": "src/components/online-chess/content/images/create.png"
+        },
+        {
+            "title": "On Entering Username to Join, List of Available Games to Join (Screenshot from 1920x1080 resolution)",
+            "url": "src/components/online-chess/content/images/gamelist.png"
+        },
+        {
+            "title": "Queue/Ready Page, Waiting for Another Player (Screenshot from 1920x1080 resolution)",
+            "url": "src/components/online-chess/content/images/queue.png"
+        },
+        {
+            "title": "After Selecting Rock, Paper, or Scissors to Start Game (Screenshot from 1920x1080 resolution)",
+            "url": "src/components/online-chess/content/images/rockpaperscissors.png"
+        },
+        {
+            "title": "Results of the Rock, Paper, Scissors Game (Screenshot from 1920x1080 resolution)",
+            "url": "src/components/online-chess/content/images/rps-results.png"
+        },
+        {
+            "title": "Chessboard Design (Screenshot from 1920x1080 resolution)",
+            "url": "src/components/online-chess/content/images/chessboard.png"
+        },
+        {
+            "title": "Checkmate! Game Reset (Screenshot from 1920x1080 resolution)",
+            "url": "src/components/online-chess/content/images/checkmate.png"
+        },
+        {
+            "title": "When your Opponent Disconnects from the Game (Screenshot from 1920x1080 resolution)",
+            "url": "src/components/online-chess/content/images/disconnect.png"
+        }
+    ]
+}

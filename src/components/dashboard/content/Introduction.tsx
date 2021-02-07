@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { changeIndex } from '../../../store/actions/ChangeViewActions';
 import { AppState } from '../../../store/store';
-import data from './images/images.json';
+import data from './images.json';
 
 const Introduction = () => {
 
