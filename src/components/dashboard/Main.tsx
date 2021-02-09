@@ -104,15 +104,14 @@ const Main = () => {
                 </section>
                 <section id="side-installation" onMouseEnter={hoverSidebar}>
                     <h2>Installation</h2>
-                    <p>Section Item 2.1</p>
-                    <p>Section Item 2.2</p>
-                    <p>Section Item 2.3</p>
+                    <p>Getting Started</p>
+                    <p>Client Side</p>
+                    <p>Server Side</p>
                 </section>
                 <section id="side-architecture" onMouseEnter={hoverSidebar}>
                     <h2>Architecture</h2>
-                    <p>Section Item 3.1</p>
-                    <p>Section Item 3.2</p>
-                    <p>Section Item 3.3</p>
+                    <p>Application Architecture</p>
+                    <p>Application Pipeline</p>
                 </section>
                 <section id="side-apis" onMouseEnter={hoverSidebar}>
                     <h2>APIs</h2>
