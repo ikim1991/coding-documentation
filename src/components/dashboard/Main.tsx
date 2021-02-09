@@ -115,9 +115,8 @@ const Main = () => {
                 </section>
                 <section id="side-apis" onMouseEnter={hoverSidebar}>
                     <h2>APIs</h2>
-                    <p>Section Item 4.1</p>
-                    <p>Section Item 4.2</p>
-                    <p>Section Item 4.3</p>
+                    <p>REST APIs</p>
+                    <p>Database Service</p>
                 </section>
                 <section id="side-bugs" onMouseEnter={hoverSidebar}>
                     <h2>Bugs</h2>
