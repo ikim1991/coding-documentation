@@ -76,20 +76,24 @@ const APIs = () => {
                 <p>For the production version, the application uses MongoDB Atlas as its database service. Mongoose is used to verify and validate data entry.</p>
                 <div className="indent">
                     <p><strong>Users Model</strong></p>
-                    <p>The User Schema consists of the username, email, password, and tokens.</p>
+                    <p>Collection consisting of the username, email and password inputted by a user. It also consists of a list of JSON Web Tokens generated per session.</p>
                     <p>The user is authenticated in the user model, and the JSON Web Token is also generated in the user model.</p>
+                    <p>To see the documentation of the Users schema, refer to the <span><a className="inline-link" href="https://github.com/ikim1991/my-dashboard-app-api/blob/master/src/models/users.js/" target="_blank" rel="noreferrer">LINK HERE.</a></span></p>
                 </div>
                 <div className="indent">
                     <p><strong>Tickers Model</strong></p>
-                    <p>The Tickers Schema consists of the user id, list of tickers, list of the financial data of the tickers, and a list of the financial news. The financial data and financial news are web scraped from Yahoo Finance.</p>
+                    <p>Collection consisting of the user id from the User Model, list of stock tickers and its stock exchange, list of the financial data of the stock tickers, and a list of the financial news pertaining to the list of stock tickers. The financial data and financial news are web scraped from Yahoo Finance.</p>
+                    <p>To see the documentation of the Tickers schema, refer to the <span><a className="inline-link" href="https://github.com/ikim1991/my-dashboard-app-api/blob/master/src/models/tickers.js/" target="_blank" rel="noreferrer">LINK HERE.</a></span></p>
                 </div>
                 <div className="indent">
                     <p><strong>Postings Model</strong></p>
-                    <p>The Postings Schema consists of the user id, and a list of job postings web scraped from Indeed.</p>
+                    <p>Collection consisting of the user id from the User Model, and a list of job postings web scraped from Indeed.</p>
+                    <p>To see the documentation of the Postings schema, refer to the <span><a className="inline-link" href="https://github.com/ikim1991/my-dashboard-app-api/blob/master/src/models/postings.js/" target="_blank" rel="noreferrer">LINK HERE.</a></span></p>
                 </div>
                 <div className="indent">
                     <p><strong>Tasks Model</strong></p>
-                    <p>The Tasks Schema consists of the user id, description of the task, the deadline, and if the task has been completed.</p>
+                    <p>Collection consisting of the user id from the User Model, description of the task, the deadline of the task, and if the task has been completed.</p>
+                    <p>To see the documentation of the Tasks schema, refer to the <span><a className="inline-link" href="https://github.com/ikim1991/my-dashboard-app-api/blob/master/src/models/tasks.js/" target="_blank" rel="noreferrer">LINK HERE.</a></span></p>
                 </div>
             </div>
         </div>
