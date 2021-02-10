@@ -31,7 +31,7 @@ const APIs = () => {
                 <h3>Websockets</h3>
                 <p>Websockets are used for real-time and interactivity of the game play. The Socket.io library is used in this application. The event emitters below are separated by functionality and application state.</p>
                 <div className="indent">
-                    <p><strong>On Join</strong></p>
+                    <p><strong>Joining a Room</strong></p>
                     <p>Creating a game is handled by REST APIs. Websocket was used as a bidirectional flow of data was required for this process. Once the Joiner successfully enters a room, the server must notifiy and update the Host client.</p>
                     <div className="indent">
                         <p><strong>Event: joinRoom, Emitter: Client</strong></p>
@@ -91,7 +91,7 @@ const APIs = () => {
                     </div>
                 </div>
                 <div className="indent">
-                    <p><strong>On Exit</strong></p>
+                    <p><strong>Exiting</strong></p>
                     <p>When a player disconnects, the opposing player's Client must be notified and updated.</p>
                     <div className="indent">
                         <p><strong>Event: exitRoom, Emitter: Client</strong></p>
