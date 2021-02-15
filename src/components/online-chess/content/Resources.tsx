@@ -4,7 +4,7 @@ const Resources = () => {
     return(
         <div className="resources">
             <div className="section-item">
-                <h3>Client Side Libraries</h3>
+                <h3>Client Side Technologies</h3>
                 <p>For a full list of all the dependencies of this application, refer to the <span><a className="inline-link" href="https://github.com/ikim1991/online-chess/blob/main/package.json/" target="_blank" rel="noreferrer">package.json file.</a></span></p>
                 <p>Shown below is the list of the key technologies used in developing the Client.</p>
                 <div className="indent">
@@ -25,7 +25,7 @@ const Resources = () => {
                 </div>
             </div>
             <div className="section-item">
-                <h3>Server Side Libraries</h3>
+                <h3>Server Side Technologies</h3>
                 <p>For a full list of all the dependencies of this application, refer to the <span><a className="inline-link" href="https://github.com/ikim1991/online-chess-api/blob/main/package.json/" target="_blank" rel="noreferrer">package.json file.</a></span></p>
                 <p>Shown below is the list of the key technologies used in developing the Server.</p>
                 <div className="indent">

@@ -4,40 +4,48 @@ const Resources = () => {
     return(
         <div className="resources">
             <div className="section-item">
-                <h3>Client Side</h3>
+                <h3>Client Side Technologies</h3>
                 <p>For a full list of all the dependencies of this application, refer to the <span><a className="inline-link" href="https://github.com/ikim1991/interactive-blackjack-app/blob/master/package.json/" target="_blank" rel="noreferrer">package.json file.</a></span></p>
-                <p>Shown below is the list of the major libaries used in developing this application.</p>
+                <p>Shown below is the list of the key technologies used in developing the Client.</p>
                 <div className="indent">
-                    <p><strong>React - ^16.13.1 / React Router Dom - ^5.2.0</strong></p>
-                    <p>The front-end application is built on React using UI components. This allows for the development of clean, fast, and scaleable coding.</p>
+                    <p><strong>React</strong></p>
+                    <p>The front-end application is built on React using UI components. This allows for the development of clean, fast, and scaleable coding. The <i>create-react-app</i> command takes care of all the boilerplate set up required in Webpack and Babel.</p>
                 </div>
                 <div className="indent">
-                    <p><strong>Redux - ^4.0.5 / React-Redux - ^7.2.0</strong></p>
+                    <p><strong>React Router</strong></p>
+                    <p>Additional package add-on for React, which provides the core routing functionality of a React application.</p>
+                </div>
+                <div className="indent">
+                    <p><strong>Redux/React-Redux</strong></p>
                     <p>A single source of truth state management system that is scaleable and easy to implement on top of the React framework.</p>
                 </div>
                 <div className="indent">
-                    <p><strong>Socket.io Client - ^2.3.0</strong></p>
+                    <p><strong>Socket.io Client</strong></p>
                     <p>Provides real-time bi-directional communication between the server and the client, crucial in maintaining a smooth interactive gameplay.</p>
                 </div>
                 <div className="indent">
-                    <p><strong>Tachyons - ^4.12.0</strong></p>
+                    <p><strong>Tachyons</strong></p>
                     <p>A functional CSS library that is fast, responsive, and easy to use for styling web pages.</p>
                 </div>
                 <div className="indent">
-                    <p><strong>Moment - ^2.27.0</strong></p>
+                    <p><strong>Moment</strong></p>
                     <p>An easy to use JavaScript library to parse, manipulate, and display time and date.</p>
                 </div>
             </div>
             <div className="section-item">
-                <h3>Server Side</h3>
+                <h3>Server Side Technologies</h3>
                 <p>For a full list of all the dependencies of this application, refer to the <span><a className="inline-link" href="https://github.com/ikim1991/interactive-blackjack-api/blob/master/package.json/" target="_blank" rel="noreferrer">package.json file.</a></span></p>
-                <p>Shown below is the list of the major libaries used in developing this application.</p>
+                <p>Shown below is the list of the key technologies used in developing the Server.</p>
                 <div className="indent">
-                    <p><strong>Express - ^4.17.1</strong></p>
+                    <p><strong>Node.js</strong></p>
+                    <p>Node.js provides a great back-end JavaScript runtime environment to run a web server.</p>
+                </div>
+                <div className="indent">
+                    <p><strong>Express</strong></p>
                     <p>A minimal and flexible web application framework for the back-end development of the application.</p>
                 </div>
                 <div className="indent">
-                    <p><strong>Socket.io - ^2.3.0</strong></p>
+                    <p><strong>Socket.io</strong></p>
                     <p>Provides real-time bi-directional communication between the server and the client, crucial in maintaining a smooth interactive gameplay.</p>
                 </div>
             </div>
