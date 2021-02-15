@@ -127,8 +127,8 @@ const Main = () => {
                 </section>
                 <section id="side-resources" onMouseEnter={hoverSidebar}>
                     <h2>Resources</h2>
-                    <p>Client Side</p>
-                    <p>Server Side</p>
+                    <p>Client Side Libraries</p>
+                    <p>Server Side Libraries</p>
                     <p>License</p>
                 </section>
                 <div className="break"></div>
