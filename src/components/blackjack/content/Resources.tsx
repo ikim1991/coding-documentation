@@ -28,7 +28,7 @@ const Resources = () => {
                     <p>A functional CSS library that is fast, responsive, and easy to use for styling web pages.</p>
                 </div>
                 <div className="indent">
-                    <p><strong>Moment</strong></p>
+                    <p><strong>Moment.js</strong></p>
                     <p>An easy to use JavaScript library to parse, manipulate, and display time and date.</p>
                 </div>
             </div>

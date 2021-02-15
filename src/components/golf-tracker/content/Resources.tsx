@@ -4,28 +4,44 @@ const Resources = () => {
     return(
         <div className="resources">
             <div className="section-item">
-                <h3>Client Side</h3>
+                <h3>Client Side Technologies</h3>
                 <p>For a full list of all the dependencies of this application, refer to the <span><a className="inline-link" href="https://github.com/ikim1991/my-golf-tracker/blob/master/package.json/" target="_blank" rel="noreferrer">package.json file.</a></span></p>
-                <p>Shown below is the list of the major libaries used in developing this application.</p>
+                <p>Shown below is the list of the key technologies used in developing the Client.</p>
                 <div className="indent">
-                    <p><strong>React - ^17.0.1</strong></p>
-                    <p>The front-end application is built on React using UI components. This allows for the development of clean, fast, and scaleable coding.</p>
+                    <p><strong>React</strong></p>
+                    <p>The front-end application is built on React using UI components. This allows for the development of clean, fast, and scaleable coding. The <i>create-react-app</i> command takes care of all the boilerplate set up required in Webpack and Babel.</p>
                 </div>
                 <div className="indent">
-                    <p><strong>Redux - ^3.6.0 / React-Redux - ^7.1.11</strong></p>
+                    <p><strong>Redux/React-Redux</strong></p>
                     <p>A single source of truth state management system that is scaleable and easy to implement on top of the React framework.</p>
+                </div>
+                <div className="indent">
+                    <p><strong>Chart.js</strong></p>
+                    <p>A clean and easy-to-use data visualization tool that creates charts using HTML and JavaScript.</p>
+                </div>
+                <div className="indent">
+                    <p><strong>Moment.js</strong></p>
+                    <p>An easy to use JavaScript library to parse, manipulate, and display time and date.</p>
                 </div>
             </div>
             <div className="section-item">
-                <h3>Server Side</h3>
+                <h3>Server Side Technologies</h3>
                 <p>For a full list of all the dependencies of this application, refer to the <span><a className="inline-link" href="https://github.com/ikim1991/my-golf-tracker-api/blob/master/package.json/" target="_blank" rel="noreferrer">package.json file.</a></span></p>
-                <p>Shown below is the list of the major libaries used in developing this application.</p>
+                <p>Shown below is the list of the key technologies used in developing the Server.</p>
                 <div className="indent">
-                    <p><strong>Express - ^4.17.1</strong></p>
+                    <p><strong>Node.js</strong></p>
+                    <p>Node.js provides a great back-end JavaScript runtime environment to run a web server.</p>
+                </div>
+                <div className="indent">
+                    <p><strong>Express</strong></p>
                     <p>A minimal and flexible web application framework for the back-end development of the application.</p>
                 </div>
                 <div className="indent">
-                    <p><strong>Mongoose - ^5.11.1</strong></p>
+                    <p><strong>MongoDB</strong></p>
+                    <p>A NoSQL, document-oriented database program. MongoDB Atlas is used as a database service in the production version of the application.</p>
+                </div>
+                <div className="indent">
+                    <p><strong>Mongoose</strong></p>
                     <p>An Object Data Modelling library for MongoDB that provides a simple schema-based solution to model the application data with built in data validation.</p>
                 </div>
             </div>
