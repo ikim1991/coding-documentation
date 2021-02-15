@@ -23,7 +23,7 @@ const Introduction = () => {
         <div className="introduction">
             <div className="section-item">
                 <h3>Project Summary</h3>
-                <p>TEXT</p>
+                <p>As an avid golfer struggling to improve his game, I developed this application to help visualize and keep track of my progress. The Golf Tracker application lets the user log all their rounds by the season. This data is used to keep track of the user's progress and visualizes the data. It displays a summary of the user's info on the side while the main content of the page uses pagination to navigate through 3 figures created using Chart.js.</p>
                 <p>The application is deployed through GitHub Pages and Heroku. The application can be found in the link below: </p>
                 <p><a href="https://ikim1991.github.io/my-golf-tracker/" target="_blank" rel="noreferrer">Deployment</a></p>
                 <p>The source code is on GitHub which can be found in the links below: </p>
@@ -31,8 +31,8 @@ const Introduction = () => {
                     <p><a className="repo" href="https://github.com/ikim1991/my-golf-tracker/" target="_blank" rel="noreferrer">Client Side</a></p>
                     <p><a className="repo" href="https://github.com/ikim1991/my-golf-tracker-api/" target="_blank" rel="noreferrer">Server Side</a></p>
                 </div>
-                <p>The client-side application is built on React using TypeScript. Webpack is used as the module bundler and Sass is used to style the application. For all dependencies, refer to the <span><a className="inline-link" href="https://github.com/ikim1991/my-golf-tracker-api/blob/master/package.json/" target="_blank" rel="noreferrer">package.json</a></span> file.</p>
-                <p>The server-side application is built on Nodejs using Express. It uses MongoDB as a database service. The server uses REST APIs and WebSockets (using Socket.io) to communicate with the clients. For all dependencies, refer to the <span><a className="inline-link" href="https://github.com/ikim1991/my-golf-tracker/blob/master/package.json/" target="_blank" rel="noreferrer">package.json</a></span> file.</p>
+                <p>The client-side application is built on React using the create-react-app command. For all dependencies, refer to the <span><a className="inline-link" href="https://github.com/ikim1991/my-golf-tracker/blob/master/package.json/" target="_blank" rel="noreferrer">package.json</a></span> file.</p>
+                <p>The server-side application is built on Nodejs using Express. It uses MongoDB as a database service. The server uses REST APIs to communicate with the clients. For all dependencies, refer to the <span><a className="inline-link" href="https://github.com/ikim1991/my-golf-tracker-api/blob/master/package.json/" target="_blank" rel="noreferrer">package.json</a></span> file.</p>
                 <p>The back-end application is hosted on Heroku using its free-tier plan. This may cause the first request to the server to take a few seconds to load as the app is put to sleep after 30 minutes of inactivity.</p>
             </div>
             <div className="section-item">
