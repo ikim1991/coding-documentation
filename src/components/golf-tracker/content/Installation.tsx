@@ -15,11 +15,21 @@ const Installation = () => {
             </div>
             <div className="section-item">
                 <h3>Server Side</h3>
-                <p>TEXT</p>
+                <p>To start, begin by installing the server side application first. You can clone or download it from the repositroy in the link above.</p>
+                <p>Start by running the command <i>npm install</i> to install all required dependencies.</p>
+                <p>After all the dependencies have been installed onto the local machine, the server can be started.</p>
+                <p>First create a file named dev.env. Here the url to the MongoDB database needs to be created under the environment variable name MONGODB_URL. This can be either a local MongoDB environment or a Database Service such as MongoDB Atlas. The default value for the PORT variable is 3001.</p>
+                <p>Next run the command <i>npm run dev</i>.</p>
+                <p>This will create a local development server environment using nodemon. With the local web server environment running, the next step will require the client side application.</p>
             </div>
             <div className="section-item">
                 <h3>Client Side</h3>
-                <p>TEXT</p>
+                <p>After the server side application is successfully running on the local machine, download or clone the client side from the repository in the link above.</p>
+                <p>Start by running the command <i>npm install</i> to install all required dependencies.</p>
+                <p>The client side is built using the create-react-app command. The development server is currently running on Port 3001 at http://localhost:3001/. This URL is referenced in the application through an environment variable. Using React's environment variables, first create a file named <i>.env</i>. In the env file create the environment variable REACT_APP_BACKEND_URL and give it the value of http://localhost:3001/.</p>
+                <p>Next run the command <i>npm start</i>.</p>
+                <p>This will build and create the client side application locally using React Scripts.</p>
+                <p>The dashboard should now be running locally on http://localhost:3000/.</p>
             </div>
         </div>
     )
