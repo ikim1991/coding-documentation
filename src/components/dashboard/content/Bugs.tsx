@@ -12,6 +12,9 @@ const Bugs = () => {
             <div className="section-item">
                 <h3>Errors & Bugs</h3>
                 <p>This application uses try and catch blocks to handle simple errors on the back-end. Any API Errors will result in a Error Status 500.</p>
+                <p>When an invalid search or request is made to the database, an Error Status 404 will be the result.</p>
+                <p>A middleware function uses JSON Web Tokens as a means of authenticating the user. When the user fails to authenticate in the middleware, a Error Status of 401 will be the result.</p>
+                <p>This application deals with data collection through web scraping. Any changes in the HTML and CSS design of the third party websites may cause errors and inconsistencies in the data.</p>
             </div>
             <div className="section-item">
                 <h3>Missing Functionality</h3>
