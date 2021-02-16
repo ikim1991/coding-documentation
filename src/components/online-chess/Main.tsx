@@ -110,7 +110,7 @@ const Main = () => {
                 </section>
                 <section id="side-architecture" onMouseEnter={hoverSidebar}>
                     <h2>Architecture</h2>
-                    <p>Application Architecture</p>
+                    <p>Application Stack</p>
                     <p>Application Pipeline</p>
                 </section>
                 <section id="side-apis" onMouseEnter={hoverSidebar}>
