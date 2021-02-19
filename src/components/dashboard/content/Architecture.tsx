@@ -11,8 +11,8 @@ const Architecture = () => {
                 <img className="item-image" src={stack}/>
             </div>
             <div className="section-item">
-                <h3>Application Pipeline</h3>
-                <p>The image below illustrates a high level overview of the application's pipeline.</p>
+                <h3>Application Flow Diagram</h3>
+                <p>The image below illustrates a high level overview of the application's flow diagram.</p>
                 <img className="item-image" src={fd}/>
             </div>
         </div>
