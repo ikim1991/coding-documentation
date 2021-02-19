@@ -16,7 +16,7 @@ const Bugs = () => {
                 <p>No game breaking bugs have been reported to this date.</p>
             </div>
             <div className="section-item">
-                <h3>Missing Functionality</h3>
+                <h3>Missing Features</h3>
                 <p>There are a few features missing from the application. The production version has been deployed and these missing features will be added in an update in the future.</p>
                 <p>There is no way for the players to communicate with one another. Whether it is in the lobby or during the game, the players are not able to interact. An interactive real-time chat messenger will be added in an update in the future.</p>
                 <p>There is no logic available for verifying and validating the states of CHECK or CHECKMATE. The winning player must capture the opponent's King manually for the game to end. A logic that automates and notifies the states of being CHECKED or CHECKMATED will be added in an update in the future.</p>

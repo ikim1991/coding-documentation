@@ -17,7 +17,7 @@ const Bugs = () => {
                 <p>This application deals with data collection through web scraping. Any changes in the HTML and CSS design of the third party websites may cause errors and inconsistencies in the data.</p>
             </div>
             <div className="section-item">
-                <h3>Missing Functionality</h3>
+                <h3>Missing Features</h3>
                 <p>There are a few features missing from the application. The production version has been deployed and these missing features will be added in an update in the future.</p>
                 <p>The application is currently not supported on mobile and tablets. Although it implements responsive design, it is recommended to not use this application below the minimum screen resolution width of 1024px.</p>
                 <p>A 16:9 aspect ratio for screen resolution is recommended.</p>

@@ -111,7 +111,7 @@ const Main = () => {
                 <section id="side-architecture" onMouseEnter={hoverSidebar}>
                     <h2>Architecture</h2>
                     <p>Application Stack</p>
-                    <p>Application Pipeline</p>
+                    <p>Application Flow Diagram</p>
                 </section>
                 <section id="side-apis" onMouseEnter={hoverSidebar}>
                     <h2>APIs</h2>
@@ -123,7 +123,7 @@ const Main = () => {
                     <h2>Bugs</h2>
                     <p>Testing</p>
                     <p>Errors & Bugs</p>
-                    <p>Missing Functionality</p>
+                    <p>Missing Features</p>
                 </section>
                 <section id="side-resources" onMouseEnter={hoverSidebar}>
                     <h2>Resources</h2>

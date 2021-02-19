@@ -16,7 +16,7 @@ const Bugs = () => {
                 <p>Currently there is one application-breaking bug found. In the process of logging a new round, the user is prompted a dropdown menu and a date picker, if the user does not specify a dropdown menu selection and proceeds to press the Show Course button, the application crashes as it tries to handle the null value. This will be fixed on the next update.</p>
             </div>
             <div className="section-item">
-                <h3>Features</h3>
+                <h3>Missing Features</h3>
                 <p>There are a few features missing from the application. The production version has been deployed and these missing features will be added in an update in the future.</p>
                 <p>The application is currently not supported on mobile and tablets. Although it implements responsive design, it is recommended to not use this application below the minimum screen resolution width of 1024px.</p>
                 <p>A 16:9 aspect ratio for screen resolution is recommended.</p>

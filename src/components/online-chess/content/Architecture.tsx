@@ -1,6 +1,6 @@
 import React from 'react';
 import stack from './images/stack.png';
-import pipeline from './images/pipeline.png';
+import fd from './images/flow-diagram.png';
 
 const Architecture = () => {
     return(
@@ -13,7 +13,7 @@ const Architecture = () => {
             <div className="section-item">
                 <h3>Application Pipeline</h3>
                 <p>The image below illustrates a high level overview of the application's pipeline.</p>
-                <img className="item-image" src={pipeline}/>
+                <img className="item-image" src={fd}/>
             </div>
         </div>
     )
