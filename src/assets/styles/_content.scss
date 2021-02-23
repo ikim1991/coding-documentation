@@ -6,8 +6,6 @@
     margin: auto;
     margin-top: 5%;
     display: grid;
-    grid-template-columns: 350px 350px 350px;
-    grid-template-rows: 250px 250px 250px;
     column-gap: 2%;
     row-gap: 5%;
     justify-content: center;
@@ -30,12 +28,8 @@
             margin-bottom: 25px;
 
             i{
-                font-size: 2rem;
                 color: $primary;
                 padding: 0 10px;
-            }
-            h2{
-                font-size: 1.5rem;
             }
         }
         p{
@@ -47,5 +41,89 @@
     .content-section:hover{
         background-color: lighten($primary, 47.5);
         box-shadow: 1px 1px 4px 4px lighten($secondary, 42.5);
+    }
+}
+
+@media only screen and (max-width: 1023px){
+    .content{
+        grid-template-columns: 275px 275px 275px;
+        grid-template-rows: 200px 200px 200px;
+
+        .content-section{
+            .section-header{
+                i{
+                    font-size: 1em;
+                }
+                h2{
+                    font-size: 1em;
+                }
+            }
+            p{
+                font-size: 0.8em;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1366px){
+    .content{
+        grid-template-columns: 325px 325px 325px;
+        grid-template-rows: 250px 250px 250px;
+
+        .content-section{
+            .section-header{
+                i{
+                    font-size: 1.1em;
+                }
+                h2{
+                    font-size: 1.1em;
+                }
+            }
+            p{
+                font-size: 0.9em;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1367px) and (max-width: 1919px){
+    .content{
+        grid-template-columns: 375px 375px 375px;
+        grid-template-rows: 275px 275px 275px;
+
+        .content-section{
+            .section-header{
+                i{
+                    font-size: 1.25em;
+                }
+                h2{
+                    font-size: 1.25em;
+                }
+            }
+            p{
+                font-size: 1em;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1920px){
+    .content{
+        grid-template-columns: 450px 450px 450px;
+        grid-template-rows: 325px 325px 325px;
+
+        .content-section{
+            .section-header{
+                i{
+                    font-size: 1.5em;
+                }
+                h2{
+                    font-size: 1.5em;
+                }
+            }
+            p{
+                font-size: 1.25em;
+            }
+        }
     }
 }
