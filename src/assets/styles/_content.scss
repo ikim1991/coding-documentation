@@ -46,20 +46,36 @@
 
 @media only screen and (max-width: 1023px){
     .content{
-        grid-template-columns: 275px 275px 275px;
-        grid-template-rows: 200px 200px 200px;
+        position: relative;
+        top: 0px;
+        display: grid;
+        grid-template-columns: 80%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        column-gap: 5%;
+        row-gap: 5%;
 
         .content-section{
+            width: 100%;
+
             .section-header{
+                margin: 0;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-items: center;
+                flex-wrap: wrap;
+
                 i{
+                    width: 100%;
                     font-size: 1em;
                 }
                 h2{
+                    width: 100%;
                     font-size: 1em;
                 }
             }
             p{
-                font-size: 0.8em;
+                display: none;
+                height: 0;
             }
         }
     }
