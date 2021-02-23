@@ -2,23 +2,23 @@
     "images": [
         {
             "title": "Single Page Application with pagination. Line chart created using Chart.js (Screenshot from 1366x768 resolution)",
-            "url": "src/components/golf-tracker/content/images/main.png"
+            "url": "https://raw.githubusercontent.com/ikim1991/coding-documentation/main/src/components/golf-tracker/content/images/main.png"
         },
         {
             "title": "Barchart created using Chart.js (Screenshot from 1366x768 resolution)",
-            "url": "src/components/golf-tracker/content/images/barchart.png"
+            "url": "https://raw.githubusercontent.com/ikim1991/coding-documentation/main/src/components/golf-tracker/content/images/barchart.png"
         },
         {
             "title": "Single Page Application. Main display page (Screenshot from 1366x768 resolution)",
-            "url": "src/components/golf-tracker/content/images/scorecard.png"
+            "url": "https://raw.githubusercontent.com/ikim1991/coding-documentation/main/src/components/golf-tracker/content/images/scorecard.png"
         },
         {
             "title": "Logging a new round (Screenshot from 1366x768 resolution)",
-            "url": "src/components/golf-tracker/content/images/newround.png"
+            "url": "https://raw.githubusercontent.com/ikim1991/coding-documentation/main/src/components/golf-tracker/content/images/newround.png"
         },
         {
             "title": "Add a new course to your database (Screenshot from 1366x768 resolution)",
-            "url": "src/components/golf-tracker/content/images/newcourse.png"
+            "url": "https://raw.githubusercontent.com/ikim1991/coding-documentation/main/src/components/golf-tracker/content/images/newcourse.png"
         }
     ]
 }

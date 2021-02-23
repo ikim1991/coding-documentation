@@ -68,6 +68,11 @@ a{
         }
 
         .navi-links{
+            margin-left: 12.5%;
+            margin-bottom: 1em;
+            width: 75%;
+            border: 2px $primary solid;
+            border-radius: 10px;
             a{
                 font-size: 1em;
             }
