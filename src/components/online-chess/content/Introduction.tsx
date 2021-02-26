@@ -23,7 +23,7 @@ const Introduction = () => {
         <div className="introduction">
             <div className="section-item">
                 <h3>Project Summary</h3>
-                <p>After binge watching The Queen's Gambit on Netflix, I decided to build a fully working game of chess on the web.</p>
+                <p>After binge watching The Queen’s Gambit, I decided to build a fully functioning game of chess.</p>
                 <p>The application is deployed through GitHub Pages and Heroku. The application can be found in the link below: </p>
                 <p><a href="https://ikim1991.github.io/online-chess/" target="_blank" rel="noreferrer">Deployment</a></p>
                 <p>The source code is on GitHub which can be found in the links below: </p>
